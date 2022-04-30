@@ -2,7 +2,7 @@ import "./category-item.styles.scss";
 
 const CategoryItem = (props) => {
   return (
-    <div className="category-container">
+    <div className={`${props.category.size} category-container`}>
       <div
         className="background-image"
         style={{

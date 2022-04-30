@@ -9,6 +9,10 @@
   margin: 0 0.5rem 1rem;
   overflow: hidden;
 
+  &.large {
+    height: 380px;
+  }
+
   &:hover {
     cursor: pointer;
 
@@ -53,11 +57,5 @@
       font-weight: lighter;
       font-size: 1rem;
     }
-  }
-}
-
-@media (max-width: 760px) {
-  .category-container {
-    width: 31.25rem;
   }
 }
