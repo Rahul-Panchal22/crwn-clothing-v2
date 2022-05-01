@@ -8,7 +8,7 @@ import {
   signInWithGoogleRedirect
 } from '../../utils/firebase/firebase.utils'
 
-const SignIn = () => {
+const Authenticate = () => {
   useEffect(()=>{
     logInWithRedirect()
   },[])
@@ -42,4 +42,4 @@ const SignIn = () => {
   );
 };
 
-export default SignIn
+export default Authenticate

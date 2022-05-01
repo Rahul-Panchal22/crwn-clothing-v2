@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "./routes/home/home.component";
 import Navigation from "./routes/navigation/navigation.component";
-import SignIn from "./routes/sign-in/sign-in-component";
+import Authenticate from "./routes/authenticate/authenticate.component";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -27,7 +27,7 @@ const App = () => {
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
           <Route path="Shop" element={<Shop />} />
-          <Route path="sign-in" element={<SignIn />} />
+          <Route path="sign-in" element={<Authenticate />} />
         </Route>
       </Routes>
     </>
