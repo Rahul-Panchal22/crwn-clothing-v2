@@ -1,13 +1,20 @@
 import { useState } from "react";
+
 import { toast } from "react-toastify";
+
 import "react-toastify/dist/ReactToastify.css";
+
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
 } from "../../utils/firebase/firebase.utils";
+
 import FormInput from "../form-input/form-input.component";
+
 import './sign-up-form.styles.scss'
+
 import Button from "../button/button.component";
+
 const defaultFormFields = {
   displayName: "",
   email: "",
@@ -54,6 +61,7 @@ const SignUpForm = () => {
       [name]: value,
     }));
   };
+  
   return (
     <div className="sign-up-container">
       <h2>Don't have an account?</h2>

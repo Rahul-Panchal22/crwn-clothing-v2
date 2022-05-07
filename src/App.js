@@ -5,9 +5,8 @@ import Authenticate from "./routes/authenticate/authenticate.component";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const Shop = () => {
-  return <h1>Shop Page</h1>;
-};
+import Shop from "./routes/shop/shop.component";
+
 const App = () => {
   return (
     <>
