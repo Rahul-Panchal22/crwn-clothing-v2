@@ -9,12 +9,12 @@ import CartDropDown from "../../components/cart-dropdown/cart-dropdown.component
 import { CartContext } from "../../context/cart.context";
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
-  const {isCartOpen} = useContext(CartContext)
+  const { isCartOpen } = useContext(CartContext);
 
   const handleSignOut = async () => {
-    await SignOutUser()
-  }
-  
+    await SignOutUser();
+  };
+
   return (
     <Fragment>
       <div className="navigation">
@@ -38,9 +38,9 @@ const Navigation = () => {
               SIGN IN
             </Link>
           )}
-          <Link className="nav-link" to=''>
+          <div className="nav-link">
             <CartIcon />
-          </Link>
+          </div>
         </div>
         {isCartOpen && <CartDropDown />}
       </div>
