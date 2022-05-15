@@ -6,6 +6,7 @@ import Authenticate from "./routes/authenticate/authenticate.component";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Shop from "./routes/shop/shop.component";
+import CheckOut from "./routes/checkout/checkout.component";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="Shop" element={<Shop />} />
           <Route path="sign-in" element={<Authenticate />} />
+          <Route path="checkout" element={<CheckOut />} />
         </Route>
       </Routes>
     </>
